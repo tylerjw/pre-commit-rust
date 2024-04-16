@@ -33,3 +33,11 @@
     language: system
     files: \.rs$
     pass_filenames: false
+-   id: cargo-sort
+    name: cargo sort
+    description: Sort entries in cargo toml.
+    entry: cargo sort
+    language: system
+    files: \.rs$
+    pass_filenames: false
+

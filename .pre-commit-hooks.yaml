@@ -36,3 +36,12 @@
   args: ["--"]
   types: [rust]
   pass_filenames: false
+- id: sort
+  name: sort
+  description: Sort entries in cargo toml.
+  entry: cargo machete
+  language: system
+  args: ["--"]
+  types: [rust]
+  pass_filenames: false
+
