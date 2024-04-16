@@ -20,3 +20,19 @@
   args: ["--", "-D", "warnings"]
   types: [rust]
   pass_filenames: false
+- id: machete
+  name: machete
+  description: Lint rust sources for unused dependencies.
+  entry: cargo machete
+  language: system
+  args: ["--"]
+  types: [rust]
+  pass_filenames: false
+- id: llvm-cov
+  name: llvm-cov
+  description: Run tests with code coverage.
+  entry: cargo machete
+  language: system
+  args: ["--"]
+  types: [rust]
+  pass_filenames: false

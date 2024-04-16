@@ -19,3 +19,17 @@
     language: system
     files: \.rs$
     pass_filenames: false
+-   id: cargo-machete
+    name: cargo machete
+    description: Check the package for errors.
+    entry: cargo machete
+    language: system
+    files: \.rs$
+    pass_filenames: false
+-   id: cargo-llvm-cov
+    name: cargo llvm-cov
+    description: Run tests with code coverage.
+    entry: cargo llvm-cov
+    language: system
+    files: \.rs$
+    pass_filenames: false
