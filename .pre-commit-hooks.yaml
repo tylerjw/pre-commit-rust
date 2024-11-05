@@ -3,45 +3,53 @@
   description: Format files with cargo fmt.
   entry: cargo fmt
   language: system
-  types: [rust]
-  args: ["--"]
+  types: [ rust ]
+  args: [ "--" ]
 - id: cargo-check
   name: cargo check
   description: Check the package for errors.
   entry: cargo check
   language: system
-  types: [rust]
+  types: [ rust ]
   pass_filenames: false
 - id: clippy
   name: clippy
   description: Lint rust sources
   entry: cargo clippy
   language: system
-  args: ["--", "-D", "warnings"]
-  types: [rust]
+  args: [ "--", "-D", "warnings" ]
+  types: [ rust ]
   pass_filenames: false
 - id: machete
   name: machete
   description: Lint rust sources for unused dependencies.
   entry: cargo machete
   language: system
-  args: ["--"]
-  types: [rust]
+  args: [ "--" ]
+  types: [ rust ]
   pass_filenames: false
 - id: llvm-cov
   name: llvm-cov
   description: Run tests with code coverage.
   entry: cargo machete
   language: system
-  args: ["--"]
-  types: [rust]
+  args: [ "--" ]
+  types: [ rust ]
   pass_filenames: false
 - id: sort
   name: sort
   description: Sort entries in cargo toml.
   entry: cargo machete
   language: system
-  args: ["--"]
-  types: [rust]
+  args: [ "--" ]
+  types: [ rust ]
   pass_filenames: false
-
+- id: lizard
+  name: lizard
+  description: Run lizard on rust files
+  entry: lizard
+  language: python
+  types: [ rust ]
+  args: [ "--warnings_only", "--languages rust", "--length 40" ]
+  pass_filenames: true
+  require_serial: false
