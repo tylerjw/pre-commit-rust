@@ -5,7 +5,7 @@
   language: system
   types: [rust]
   args: ["--"]
-- id: cargo-check
+- id: check
   name: cargo check
   description: Check the package for errors.
   entry: cargo check
