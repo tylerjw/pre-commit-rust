@@ -5,19 +5,24 @@
 ## Using rust tools with pre-commit
 
 ```yaml
--   repo: https://github.com/doublify/pre-commit-rust
-    rev: master
+repos:
+  - repo: https://github.com/tylerjw/pre-commit-rust.git
+    rev: v1.3
     hooks:
-    -   id: fmt
-    -   id: cargo-check
+      - id: fmt
+      - id: check
+      - id: clippy
+      - id: machete
+      - id: sort
 ```
 
 ## Passing arguments to rustfmt
 
 ```yaml
--   repo: https://github.com/doublify/pre-commit-rust
-    rev: master
+repos:
+  - repo: https://github.com/tylerjw/pre-commit-rust.git
+    rev: v1.3
     hooks:
-    -   id: fmt
+      - id: fmt
         args: ['--verbose', '--edition', '2018', '--']
 ```
