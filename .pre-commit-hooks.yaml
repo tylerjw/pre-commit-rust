@@ -35,4 +35,3 @@
   args: ["--grouped"]
   types: [rust]
   pass_filenames: false
-
