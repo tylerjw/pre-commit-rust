@@ -25,23 +25,14 @@
   description: Lint rust sources for unused dependencies.
   entry: cargo machete
   language: system
-  args: ["--"]
-  types: [rust]
-  pass_filenames: false
-- id: llvm-cov
-  name: llvm-cov
-  description: Run tests with code coverage.
-  entry: cargo machete
-  language: system
-  args: ["--"]
   types: [rust]
   pass_filenames: false
 - id: sort
   name: sort
   description: Sort entries in cargo toml.
-  entry: cargo machete
+  entry: cargo sort
   language: system
-  args: ["--"]
+  args: ["--grouped"]
   types: [rust]
   pass_filenames: false
 
