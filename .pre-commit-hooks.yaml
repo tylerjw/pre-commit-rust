@@ -17,7 +17,7 @@
   description: Lint rust sources
   entry: cargo clippy
   language: system
-  args: ["--tests", "--", "-D", "warnings"]
+  args: ["--all-targets", "--", "-D", "warnings"]
   types: [rust]
   pass_filenames: false
 - id: machete

@@ -7,7 +7,7 @@
 ```yaml
 repos:
   - repo: https://github.com/tylerjw/pre-commit-rust.git
-    rev: v1.5
+    rev: v1.6
     hooks:
       - id: fmt
       - id: check
