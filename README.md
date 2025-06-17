@@ -7,13 +7,14 @@
 ```yaml
 repos:
   - repo: https://github.com/tylerjw/pre-commit-rust.git
-    rev: v1.6
+    rev: v1.7
     hooks:
       - id: fmt
       - id: check
       - id: clippy
       - id: machete
       - id: sort
+      - id: sort-derives
 ```
 
 ## Passing arguments to rustfmt
@@ -21,7 +22,7 @@ repos:
 ```yaml
 repos:
   - repo: https://github.com/tylerjw/pre-commit-rust.git
-    rev: v1.5
+    rev: v1.7
     hooks:
       - id: fmt
         args: ['--verbose', '--edition', '2018', '--']

@@ -5,6 +5,7 @@
   language: system
   types: [rust]
   args: ["--"]
+  pass_filenames: false
 - id: check
   name: cargo check
   description: Check the package for errors.
@@ -24,14 +25,25 @@
   name: machete
   description: Lint rust sources for unused dependencies.
   entry: cargo machete
-  language: system
+  language: rust
   types: [rust]
   pass_filenames: false
+  additional_dependencies: ["cli:cargo-machete:0.7.0"]
 - id: sort
   name: sort
   description: Sort entries in cargo toml.
   entry: cargo sort
-  language: system
+  language: rust
   args: ["--grouped"]
   types: [rust]
+  additional_dependencies: ["cli:cargo-sort:2.0.1"]
+  pass_filenames: false
+- id: sort-derives
+  name: sort-derives
+  description: Sort rust derive attributes.
+  entry: cargo sort-derives
+  args: ["--order", "Copy,Clone,Eq,PartialEq,Ord,PartialOrd,Hash,Debug,Default"]
+  language: rust
+  types: [rust]
+  additional_dependencies: ["cli:cargo-sort-derives:0.10.0"]
   pass_filenames: false
