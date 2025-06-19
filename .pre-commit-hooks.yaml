@@ -34,7 +34,7 @@
   description: Sort entries in cargo toml.
   entry: cargo sort
   language: rust
-  args: ["--grouped"]
+  args: ["--grouped", "--workspace"]
   types: [rust]
   additional_dependencies: ["cli:cargo-sort:2.0.1"]
   pass_filenames: false

@@ -7,7 +7,7 @@
 ```yaml
 repos:
   - repo: https://github.com/tylerjw/pre-commit-rust.git
-    rev: v1.7
+    rev: v1.8
     hooks:
       - id: fmt
       - id: check
@@ -22,7 +22,7 @@ repos:
 ```yaml
 repos:
   - repo: https://github.com/tylerjw/pre-commit-rust.git
-    rev: v1.7
+    rev: v1.8
     hooks:
       - id: fmt
         args: ['--verbose', '--edition', '2018', '--']
